@@ -1,11 +1,11 @@
-const inputs = Array.from(document.querySelectorAll('.controls input'));
+const inputs = Array.from(document.querySelectorAll('.controls input'))
 
-function handleChange() {
-    const suffix = this.dataset.sizing || '';
-    document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+function handleChange () {
+  const suffix = this.dataset.sizing || ''
+  document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
 }
 
 inputs.forEach(input => {
-    input.addEventListener('change', handleChange);
-    input.addEventListener('mousemove', handleChange);
-});
+  input.addEventListener('change', handleChange)
+  input.addEventListener('mousemove', handleChange)
+})
